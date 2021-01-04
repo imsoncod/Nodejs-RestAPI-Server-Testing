@@ -22,6 +22,7 @@ app.use(bodyParser.urlencoded({extended: true}))
 app.use('/users', userRouter)
 
 //서버를 요청 대기 상태로 만들어준다
-//app.listen(4000, () => console.log('running'))
+app.listen(4000, () => console.log('running'))
 
+//app을 모듈로 만들어줌
 module.exports = app
